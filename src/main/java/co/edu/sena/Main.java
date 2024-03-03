@@ -88,3 +88,24 @@ class EuroDollar {
     }
 
 }
+
+class Squared {
+    public static void main(String[] args) {
+        double dato1;
+        double dato2;
+        double dato3;
+        double dato4;
+
+        // Todo Menú y Submenús
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.err.println("1.5 Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del area y del perimetro");
+        Scanner scr = new Scanner(System.in);
+
+        System.out.println("Ingrese el lado del cuadrado: ");
+        dato1 = scr.nextDouble();
+        dato2 = ejercicios.cuadradoArea(dato1);
+        dato3 = ejercicios.cuadradoPerimetro(dato1);
+        System.out.println("El área del cuadrado es "  + dato2  + " y el perimetro es "  + dato3);
+    }
+}

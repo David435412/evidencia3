@@ -14,5 +14,11 @@ public class Ejercicios {
     public double euroDolar(double d1){
         return (d1 * 1.08);
     }
+    public double cuadradoArea(double d1){
+        return (d1 * d1);
+    }
+    public double cuadradoPerimetro(double d1){
+        return (d1 * 4);
+    }
 }
     
