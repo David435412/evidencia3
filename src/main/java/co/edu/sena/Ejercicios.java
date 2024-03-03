@@ -20,5 +20,15 @@ public class Ejercicios {
     public double cuadradoPerimetro(double d1){
         return (d1 * 4);
     }
+    public double cilindroArea(double d1, double d2){
+        double basearea = 3.1416 * d1 * d1 ;
+        double lateralarea = 2 * 3.1416 * d1 * d2;
+        return (basearea + lateralarea);          
+    }   
+    public double cilindroVolumen(double d1, double d2){
+        double basearea = 3.1416 * d1 * d1 ;        
+        return (basearea + d2);          
+    }          
+    
 }
     

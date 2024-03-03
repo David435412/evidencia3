@@ -99,13 +99,37 @@ class Squared {
         // Todo Menú y Submenús
         Ejercicios ejercicios = new Ejercicios();
 
-        System.err.println("1.5 Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del area y del perimetro");
+        System.err.println(
+                "1.5 Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del area y del perimetro");
         Scanner scr = new Scanner(System.in);
 
         System.out.println("Ingrese el lado del cuadrado: ");
         dato1 = scr.nextDouble();
         dato2 = ejercicios.cuadradoArea(dato1);
         dato3 = ejercicios.cuadradoPerimetro(dato1);
-        System.out.println("El área del cuadrado es "  + dato2  + " y el perimetro es "  + dato3);
+        System.out.println("El área del cuadrado es " + dato2 + " y el perimetro es " + dato3);
+    }
+}
+
+class Cylinder {
+    public static void main(String[] args) {
+        double dato1;
+        double dato2;
+        double dato3;
+        double dato4;
+
+        // Todo Menú y Submenús
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.err.println("1.6 Escribir un algoritmo que determine el area y el volumen de un cilindro");
+        Scanner scr = new Scanner(System.in);
+
+        System.out.println("Ingrese el radio de la base del cilindro: ");
+        dato1 = scr.nextDouble();
+        System.out.println("Ingrese la altura del cilindro: ");
+        dato2 = scr.nextDouble();
+        dato3 = ejercicios.cilindroArea(dato1, dato2);
+        dato4 = ejercicios.cilindroVolumen(dato1, dato2);
+        System.out.println("El área del cilindro es " + dato3 + " y el volumen es " + dato4);
     }
 }
