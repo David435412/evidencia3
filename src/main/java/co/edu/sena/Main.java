@@ -47,3 +47,23 @@ class Sumnumbers {
         System.out.println("La suma es: " + dato3);
     }
 }
+
+class NumberSquared {
+    public static void main(String[] args) {
+        double dato1;
+        double dato2;
+        double dato3;
+        double dato4;
+
+        // Todo Menú y Submenús
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.err.println("1.3 Ingresar un número y visualizar el número al cuadrado");
+        Scanner scr = new Scanner(System.in);
+
+        System.out.println("Ingrese un número: ");
+        dato1 = scr.nextDouble();
+        dato2 = ejercicios.numeroCuadrado(dato1);
+        System.out.println("El número al cuadrado es: " + dato2);
+    }
+}

@@ -8,5 +8,8 @@ public class Ejercicios {
     public double sumarNumeros(double d1, double d2){
         return (d1 + d2);
     }
+    public double numeroCuadrado(double d1){
+        return (d1 * d1);
+    }
 }
     
