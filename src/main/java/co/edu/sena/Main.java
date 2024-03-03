@@ -67,3 +67,24 @@ class NumberSquared {
         System.out.println("El número al cuadrado es: " + dato2);
     }
 }
+
+class EuroDollar {
+    public static void main(String[] args) {
+        double dato1;
+        double dato2;
+        double dato3;
+        double dato4;
+
+        // Todo Menú y Submenús
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.err.println("1.4 Escribir un algoritmo que convierta de euros a dólares");
+        Scanner scr = new Scanner(System.in);
+
+        System.out.println("Ingrese la cantidad en Euros para convertir a dólar: ");
+        dato1 = scr.nextDouble();
+        dato2 = ejercicios.euroDolar(dato1);
+        System.out.println("Sus euros equivalen a " + dato2 + " dólares");
+    }
+
+}

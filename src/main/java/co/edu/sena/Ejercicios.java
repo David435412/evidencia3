@@ -11,5 +11,8 @@ public class Ejercicios {
     public double numeroCuadrado(double d1){
         return (d1 * d1);
     }
+    public double euroDolar(double d1){
+        return (d1 * 1.08);
+    }
 }
     
