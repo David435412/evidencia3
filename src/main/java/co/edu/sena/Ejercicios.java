@@ -28,7 +28,13 @@ public class Ejercicios {
     public double cilindroVolumen(double d1, double d2){
         double basearea = 3.1416 * d1 * d1 ;        
         return (basearea + d2);          
-    }          
+    }   
+    public double circuloLongitud(double d1){
+        return (2 * 3.1416 * d1);
+    }      
+    public double circuloArea(double d1){
+        return (2 * (d1 * d1));
+    }  
     
 }
     

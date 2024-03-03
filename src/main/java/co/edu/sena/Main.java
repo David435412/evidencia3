@@ -99,8 +99,7 @@ class Squared {
         // Todo Menú y Submenús
         Ejercicios ejercicios = new Ejercicios();
 
-        System.err.println(
-                "1.5 Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del area y del perimetro");
+        System.err.println("1.5 Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del area y del perimetro");
         Scanner scr = new Scanner(System.in);
 
         System.out.println("Ingrese el lado del cuadrado: ");
@@ -132,4 +131,26 @@ class Cylinder {
         dato4 = ejercicios.cilindroVolumen(dato1, dato2);
         System.out.println("El área del cilindro es " + dato3 + " y el volumen es " + dato4);
     }
+}
+
+class Circle {
+    public static void main(String[] args) {
+        double dato1;
+        double dato2;
+        double dato3;
+        double dato4;
+
+        // Todo Menú y Submenús
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.err.println("1.7 Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y el área del circulo inscrito");
+        Scanner scr = new Scanner(System.in);
+
+        System.out.println("Ingrese el radio de el circulo: ");
+        dato1 = scr.nextDouble();
+        dato2 = ejercicios.circuloLongitud(dato1);
+        dato3 = ejercicios.circuloArea(dato1);
+        System.out.println("La longitud del circulo es " + dato2 + " y el área es " + dato3);
+    }
+
 }
