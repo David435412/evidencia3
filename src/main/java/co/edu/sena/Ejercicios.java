@@ -35,6 +35,9 @@ public class Ejercicios {
     public double circuloArea(double d1){
         return (2 * (d1 * d1));
     }  
+    public double promedio(double d1, double d2, double d3){
+        return ((d1 + d2 + d3) / 3);
+    }
     
 }
     

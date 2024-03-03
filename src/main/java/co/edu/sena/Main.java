@@ -9,7 +9,7 @@ public class Main {
         double dato3;
         double dato4;
 
-        // Todo Menú y Submenús
+        
         Ejercicios ejercicios = new Ejercicios();
 
         System.err.println("1.1 Calcular el área de un triángulo");
@@ -33,7 +33,7 @@ class Sumnumbers {
         double dato3;
         double dato4;
 
-        // Todo Menú y Submenús
+  
         Ejercicios ejercicios = new Ejercicios();
 
         System.err.println("1.2 Ingresar 2 numeros y sumarlos");
@@ -55,7 +55,7 @@ class NumberSquared {
         double dato3;
         double dato4;
 
-        // Todo Menú y Submenús
+      
         Ejercicios ejercicios = new Ejercicios();
 
         System.err.println("1.3 Ingresar un número y visualizar el número al cuadrado");
@@ -75,7 +75,7 @@ class EuroDollar {
         double dato3;
         double dato4;
 
-        // Todo Menú y Submenús
+       
         Ejercicios ejercicios = new Ejercicios();
 
         System.err.println("1.4 Escribir un algoritmo que convierta de euros a dólares");
@@ -96,10 +96,11 @@ class Squared {
         double dato3;
         double dato4;
 
-        // Todo Menú y Submenús
+        
         Ejercicios ejercicios = new Ejercicios();
 
-        System.err.println("1.5 Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del area y del perimetro");
+        System.err.println(
+                "1.5 Escribir un algoritmo que pida el lado de un cuadrado y muestre el valor del area y del perimetro");
         Scanner scr = new Scanner(System.in);
 
         System.out.println("Ingrese el lado del cuadrado: ");
@@ -117,7 +118,7 @@ class Cylinder {
         double dato3;
         double dato4;
 
-        // Todo Menú y Submenús
+     
         Ejercicios ejercicios = new Ejercicios();
 
         System.err.println("1.6 Escribir un algoritmo que determine el area y el volumen de un cilindro");
@@ -140,10 +141,11 @@ class Circle {
         double dato3;
         double dato4;
 
-        // Todo Menú y Submenús
+       
         Ejercicios ejercicios = new Ejercicios();
 
-        System.err.println("1.7 Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y el área del circulo inscrito");
+        System.err.println(
+                "1.7 Realizar un algoritmo que lea el radio de una circunferencia y escriba la longitud de la misma y el área del circulo inscrito");
         Scanner scr = new Scanner(System.in);
 
         System.out.println("Ingrese el radio de el circulo: ");
@@ -153,4 +155,28 @@ class Circle {
         System.out.println("La longitud del circulo es " + dato2 + " y el área es " + dato3);
     }
 
+}
+
+class Average {
+    public static void main(String[] args) {
+        double dato1;
+        double dato2;
+        double dato3;
+        double dato4;
+
+        
+        Ejercicios ejercicios = new Ejercicios();
+
+        System.err.println("1.8 Calcular el promedio de tres números ingresados por teclado");
+        Scanner scr = new Scanner(System.in);
+
+        System.out.println("Ingrese el primer número: ");
+        dato1 = scr.nextDouble();
+        System.out.println("Ingrese el segundo número: ");
+        dato2 = scr.nextDouble();
+        System.out.println("Ingrese el tercer número: ");
+        dato3 = scr.nextDouble();
+        dato4 = ejercicios.promedio(dato1, dato2, dato3);
+        System.out.println("El promedio de los 3 números es: " + dato4);
+    }
 }
